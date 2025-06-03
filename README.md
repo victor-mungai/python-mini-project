@@ -1,3 +1,5 @@
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Progress](https://img.shields.io/badge/Learning-In--Progress-yellow)
  🐍 Python Mini Projects
 
 Hi! I'm Victor Mungai, and this repository contains my mini projects as I learn Python—one step at a time. My long-term goal is to become a skilled **DevOps Engineer**, and this repo is a foundation of that journey.
