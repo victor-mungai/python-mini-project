@@ -1,5 +1,6 @@
 from fabric.api import *
 import time
+import socket
 def web():
     file_name= "2137_barista_cafe.zip"
     sudo("yum install httpd wget unzip -y")
@@ -12,7 +13,8 @@ def web():
     sudo("systemctl restart firewalld")
     sudo("systemctl restart httpd")
     time.sleep(10)
-    ipaddress = run("ip a | grep -i 192.168 | awk '{print $2}'")
+   # ipaddress = run("ip a | grep -i 192.168 | awk '{print $2}'")
+    ipaddress = socket.gethostbyname(hostname)
     print("Done you can access the website by entering this : {}:80 on your browser".format(ipaddress))
 
 
