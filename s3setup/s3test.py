@@ -8,7 +8,7 @@ s3 = boto3.client('s3')
 bucket_name = 'botopython27811234'
 file_name = input("Enter the path of the file to upload: ")
 object_name = file_name
-
+ 
 #upload file to s3
 try:
     
